@@ -16,5 +16,15 @@ namespace MagicLibrary
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lbl_test.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lbl_test.Text = "You clicked that button!";
+        }
     }
 }
