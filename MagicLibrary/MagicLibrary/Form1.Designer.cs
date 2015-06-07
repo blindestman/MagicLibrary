@@ -30,6 +30,7 @@
         {
             this.tb_searchField = new System.Windows.Forms.TextBox();
             this.btn_Search = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // tb_searchField
@@ -49,11 +50,20 @@
             this.btn_Search.UseVisualStyleBackColor = true;
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(73, 85);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(495, 262);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.tb_searchField);
             this.Name = "Form1";
@@ -68,6 +78,7 @@
 
         private System.Windows.Forms.TextBox tb_searchField;
         private System.Windows.Forms.Button btn_Search;
+        private System.Windows.Forms.ListBox listBox1;
 
     }
 }
