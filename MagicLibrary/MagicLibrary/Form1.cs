@@ -19,12 +19,12 @@ namespace MagicLibrary
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lbl_test.Text = "";
-        }
 
-        private void button1_Click(object sender, EventArgs e)
+        }
+                
+        private void btn_Search_Click(object sender, EventArgs e)
         {
-            lbl_test.Text = "You clicked that button!";
+            tb_searchField.Text = "Test";
         }
     }
 }

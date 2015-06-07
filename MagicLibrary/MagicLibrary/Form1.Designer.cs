@@ -28,36 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.lbl_test = new System.Windows.Forms.Label();
+            this.tb_searchField = new System.Windows.Forms.TextBox();
+            this.btn_Search = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // tb_searchField
             // 
-            this.button1.Location = new System.Drawing.Point(379, 109);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "hi im a button";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.tb_searchField.Location = new System.Drawing.Point(4, 4);
+            this.tb_searchField.Name = "tb_searchField";
+            this.tb_searchField.Size = new System.Drawing.Size(130, 20);
+            this.tb_searchField.TabIndex = 0;
             // 
-            // lbl_test
+            // btn_Search
             // 
-            this.lbl_test.AutoSize = true;
-            this.lbl_test.Location = new System.Drawing.Point(320, 114);
-            this.lbl_test.Name = "lbl_test";
-            this.lbl_test.Size = new System.Drawing.Size(35, 13);
-            this.lbl_test.TabIndex = 1;
-            this.lbl_test.Text = "label1";
+            this.btn_Search.Location = new System.Drawing.Point(140, 4);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(75, 20);
+            this.btn_Search.TabIndex = 1;
+            this.btn_Search.Text = "Search";
+            this.btn_Search.UseVisualStyleBackColor = true;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(495, 262);
-            this.Controls.Add(this.lbl_test);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Search);
+            this.Controls.Add(this.tb_searchField);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -68,8 +66,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label lbl_test;
+        private System.Windows.Forms.TextBox tb_searchField;
+        private System.Windows.Forms.Button btn_Search;
+
     }
 }
 
